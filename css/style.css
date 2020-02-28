@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    padding: 10px;
+    height: 100px;
+    background-color: transparent;
+    width: 1130px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 20px;
+}
+
+.logo img{
+    height: 50%;
+}
+
+.navegacao{
+    flex-grow: 1;
+    font-size: 20px;
+    color: rgb(253, 7, 7);
+}
+
+.navegacao ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.navegacao ul li{
+    margin-left: 40px;
+}
+
+.chamariz{
+    width: 100%;
+    background-color: rgba(253, 7, 7, 0.863);
+    height: 650px;
+    margin-bottom: 100px;
+}
+
+.beneficios{
+    color: black;
+    text-align: center;
+}
+
+.beneficios h2{
+    font-size: 40px;
+}
+
+.beneficios h3{
+    font-size: 20px;
+}
+
+.boxes{
+    display: flex;
+    height: 500px;
+    background-color: transparent;
+    padding: 20px;
+    margin-bottom: 100px;
+    justify-content: center;
+}
+
+.boxes .box{
+    width: 380px;
+    border: solid rgb(253, 7, 7) 1px;
+    border-radius: 10px;
+    margin: 0 50px;
+    transition: 1s;
+}
+
+.boxes .box:hover{
+    transform: scale(1.005);
+    box-shadow: 0 0 10px rgba(253, 7, 7, 0.753);
+    border: none;
+}
+
+.ajuda{
+    height: 600px;
+    background-color: blueviolet;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
