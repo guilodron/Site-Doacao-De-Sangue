@@ -24,15 +24,21 @@
 .navegacao{
     flex-grow: 1;
     font-size: 20px;
-    color: rgb(253, 7, 7);
+    
 }
 
 .navegacao ul{
     display: flex;
     list-style: none;
+    text-decoration: none;
     justify-content: flex-end;
 }
 
 .navegacao ul li{
     margin-left: 40px;
+}
+
+.navegacao ul li a{
+    text-decoration: none;
+    color: rgb(253, 7, 7);
 }
