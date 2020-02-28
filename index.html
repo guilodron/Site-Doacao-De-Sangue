@@ -9,6 +9,16 @@
         <link rel="stylesheet" href="css/beneficios.css">
         <link rel="stylesheet" href="css/contador.css">
         <title>Doe</title>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            jQuery(document).ready(function( $ ) {
+                $('.count').counterUp({
+                    delay: 10,
+                    time: 3000
+                });
+            });
+        </script>
     </head>
 
     <body>
@@ -64,9 +74,29 @@
                 </div>
             </div>
 
-            <div class="contador"></div>
+            div
+            <div class="contador">
+                <div class="mensagem">Você pode ajudar também</div>
+                <div class="dado1 data">
+                    <img src="./imgs/blood-donation.png" alt="doacao de sangue">
+                    <span class="count">2,400,000</span>
+                    <span class="texto">Doações em 2019</span>
+                </div>
+                <div class="dado2 data">
+                    <img src="./imgs/doador.png" alt="doador de sangue">
+                    <span class="count">3,300,000</span>
+                    <span class="texto">Doadores</span>
+                </div>
+                <div class="dado3 data">
+                    <img src="./imgs/location.png" alt="localizacao">
+                    <span class="count">32</span>
+                    <span class="texto">Hemocentros no Brasil</span>
+                </div>
+
+            </div>
         </main>
-        
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+        <script src="./js/jquery.counterup.min.js"></script>
     </body>
 </html>
 

@@ -1,8 +1,48 @@
 .contador{
+    background-color: rgba(251, 0, 0, 0.575);;
+    width: 85%;
     height: 600px;
-    background-color: blueviolet;
     margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    grid-template-areas: "mensagem mensagem dado1 dado1"
+                         "mensagem mensagem dado3 dado2";
+    color: white;
+
+}
+
+.contador .mensagem{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 100px;
+    grid-area: mensagem;
+}
+
+.contador img{
+    max-height: 50%;
+}
+
+.contador .dado1{grid-area: dado1;}
+.contador .dado2{grid-area: dado2;}
+.contador .dado3{grid-area: dado3;}
+
+.contador .data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.contador .data .count{
+    font-weight: bold;
+    font-size: 40px;
+
 }
