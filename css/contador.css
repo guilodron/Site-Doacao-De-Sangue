@@ -1,0 +1,8 @@
+.contador{
+    height: 600px;
+    background-color: blueviolet;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
