@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 
-.logo {
+.logo{
     display: flex;
     align-items: center;
     height: 100%;
@@ -41,4 +41,11 @@
 .navegacao ul li a{
     text-decoration: none;
     color: rgb(253, 7, 7);
+    transition: 0.5s;
+}
+
+.navegacao ul li a:hover{
+    color:rgb(165, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
 }

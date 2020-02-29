@@ -1,6 +1,41 @@
 .chamariz{
     width: 100%;
-    background-color: rgba(251, 0, 0, 0.575);
-    height: 650px;
+    background: linear-gradient(rgba(251, 0, 0, 0.5), rgba(251, 0, 0, 0.5))  , url(/imgs/bg-img.jpg);
+    background-size: 100% 100%;
+    height: 700px;
     margin-bottom: 100px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-text{
+    color: rgb(236, 233, 233);
+    font-family: serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 5em;
+    width: 40%;
+}
+
+.donate-button{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 60px;
+    width: 100px;
+    border-radius: 10%;
+    font-size: 20px;
+    background-color: transparent;
+    border: white 3px solid;
+    color: white;
+    transition: 1s;
+}
+
+.donate-button:hover{
+    background-color: tomato;
 }
