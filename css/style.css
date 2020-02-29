@@ -7,14 +7,20 @@ body{
     box-sizing: border-box;
 }
 
-.topo input{
+.topo img{
+    transform: rotate(-90deg);
     position: fixed;
     bottom: 30px;
     left: 30px;
     height: 50px;
     width: 50px;
-    border-radius: 20%;
-    background-color: rgba(251, 0, 0, 0.575);
-    color: white;
-    text-decoration: none;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.topo img:hover{
+    bottom: 25px;
+    left: 25px;
+    height: 55px;
+    width: 55px;
 }

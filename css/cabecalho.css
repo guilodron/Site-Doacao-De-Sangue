@@ -13,7 +13,7 @@
 .logo{
     display: flex;
     align-items: center;
-    height: 100%;
+    height: 190%;
     margin-left: 20px;
 }
 
@@ -35,7 +35,8 @@
 }
 
 .navegacao ul li{
-    margin-left: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .navegacao ul li a{

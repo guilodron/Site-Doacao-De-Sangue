@@ -58,6 +58,8 @@
 .coracao-beneficio{
     height: 150px;
     margin-top: 80px;
+}
+.boxes .box:hover img{
     animation: pulsar 1s infinite alternate; 
 }
 
@@ -67,7 +69,10 @@ hr{
 }
 
 @keyframes pulsar{
-    100%{
+    80%{
         transform: scale(1.1);
+    }
+    90%{
+        transform: scale(0.9);
     }
 }
