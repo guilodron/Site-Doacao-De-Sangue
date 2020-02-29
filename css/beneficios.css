@@ -55,11 +55,16 @@
     margin-right: auto;
 }
 
-.coracao-beneficio{
+.icon{
     height: 150px;
     margin-top: 80px;
 }
-.boxes .box:hover img{
+
+.boxes .box:hover .icon{
+    animation: inflar 1s infinite alternate; 
+}
+
+.boxes .box:hover .coracao-beneficio{
     animation: pulsar 1s infinite alternate; 
 }
 
@@ -74,5 +79,11 @@ hr{
     }
     90%{
         transform: scale(0.9);
+    }
+}
+
+@keyframes inflar{
+    100%{
+        transform: scale(1.1);
     }
 }
