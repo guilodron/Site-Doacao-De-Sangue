@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/areaPrincipal.css">
         <link rel="stylesheet" href="css/beneficios.css">
         <link rel="stylesheet" href="css/contador.css">
+        <link rel="stylesheet" href="css/depoimentos.css">
         <title>Doe</title>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -35,6 +36,8 @@
                         <li><a href="#beneficios">Beneficios</a></li>
                         |
                         <li><a href="#contador">Dados</a></li>
+                        |
+                        <li><a href="#depoimentos">Depoimentos</a></li>
                     </ul>
                 </div>
             </div>
@@ -102,9 +105,58 @@
                 </div>
 
             </div>
+
+            <div class="depoimentos" id="depoimentos">
+                <h2>Depoimentos</h2>
+                <hr>
+                <div class="depoimento">
+                    <img src="./imgs/seta-pass.png" class="anterior pass" onclick="slider(-1)" alt="Topo">
+                    <div class="card">
+                        <img src="./imgs/avatar1.png" alt="foto">
+                        <p><span class="nome">Felipe</span><br>
+                            "Eu doei sangue e foi uma experiência muito tranquila recompensadora"</p>
+                    </div>
+                    <div class="card">
+                        <img src="./imgs/avatar2.png"  alt="foto">
+                        <p><span class="nome">Carlos</span><br>
+                            "Fui com minha namorada e fomos atendidos rapidamente, com muito profissionalismo
+                            e eficiência"</p>
+                    </div>
+                    <div class="card">
+                        <img src="./imgs/avatar3.png"  alt="foto">
+                        <p class="text"><span class="nome">Asuna</span><br>
+                            "Acho que todas as pessoas deveriam doar sangue. Além de não doer nada você
+                            tem a chance de ajudar várias pessoas"</p>
+                    </div>                           
+                    <img src="./imgs/seta-pass.png" class="proximo pass" onclick="slider(1)" alt="Topo">
+                </div>
+            </div>
         </main>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
         <script src="./js/jquery.counterup.min.js"></script>
+
+        <script>
+            const depoimentos = document.querySelectorAll('.depoimentos .card')
+            console.log(depoimentos, depoimentos.length)
+            let atual = 0
+            depoimentos[0].style.visibility = 'visible'
+            function slider(num){
+                depoimentos[atual].style.opacity = 0.1
+                depoimentos[atual].style.visibility = 'hidden'
+                const countSize = depoimentos.length - 1
+                if(atual + num > countSize){
+                    atual = 0
+                }else if(atual + num < 0){
+                    atual = countSize
+                }else{
+                    atual += num
+                }
+                console.log(atual)
+                depoimentos[atual].style.visibility = 'visible'
+                depoimentos[atual].style.opacity = 1
+            }
+        </script>
+
     </body>
 </html>
 

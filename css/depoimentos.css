@@ -1,0 +1,76 @@
+.depoimentos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    /* border: violet solid 5px; */
+    margin-bottom: 200px;
+}
+
+.depoimentos h2{
+    font-size: 60px;
+    margin: 0;
+}
+
+.depoimento{
+    box-sizing: content-box;
+    width: 100%;
+    /* border: red solid 3px; */
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 100%;
+    grid-template-areas: "anterior card proximo";
+}
+
+.card{
+    visibility: hidden;
+    padding: 10px;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    width: 80%;
+    grid-area: card;
+    border: #ff415b solid 3px;
+    border-radius: 10%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.card p{
+    width: 50%;
+    font-size: 30px;
+}
+
+.card .nome{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.depoimento img{
+    height: 60%;
+}
+
+.depoimento .anterior{
+    grid-area: anterior;
+    transform: rotate(180deg);
+    justify-self: end;
+}
+
+.depoimento .proximo{
+    grid-area: proximo;
+    justify-self: start;
+}
+
+.depoimento .pass{
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 10%;
+    transition: 0.3s;
+}
+
+.depoimento .pass:active{
+    transform: scale(0.8);
+}
