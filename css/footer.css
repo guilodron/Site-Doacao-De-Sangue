@@ -11,15 +11,29 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 100px;
-    grid-template-areas: ". . . . icones .";
+    grid-template-areas: ". . . . icones creditos";
 }
 
 .icones{
     grid-area: icones;
     justify-self: start;
     align-self: center;
+    color:white
 }
 
 .icones i:hover{
     color: black;
+}
+
+.creditos{
+    font-size: 15px;
+    align-self: end;
+    grid-area: creditos;
+    text-decoration: none;
+}
+
+.creditos a{
+    text-decoration: none;
+    color: white;
+
 }
